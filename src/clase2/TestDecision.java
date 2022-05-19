@@ -43,7 +43,7 @@ public class TestDecision {
 	}
 
 	void switchUse() {
-		int dia = 4;
+		int dia = 14;
 		switch (dia) {
 		case 1:
 			System.out.println("Lunes");
