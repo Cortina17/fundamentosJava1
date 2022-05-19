@@ -15,6 +15,7 @@ public class TestDecision {
 		test.forUseThird();
 		test.forUseFourth();
 		test.whileUse();
+		test.breakContinueUse();
 	}
 
 	static int verCantidadAsistentes() {
@@ -141,5 +142,23 @@ public class TestDecision {
 		do {
 			System.out.println("Numero 2 contador: " + cont1);
 		} while (cont1++ < 10);
+	}
+
+	void breakContinueUse() {
+		int i;
+		for (i = 1; i <= 4; i++) {
+			if (i == 3)
+				continue;
+			System.out.println("Iteracion nro: " + i);
+		}
+
+		i = 1;
+		for (i = 1; i <= 4; i++) {
+			if (i == 3)
+				break;
+			{
+				System.out.println("Itereacion nro 2: " + i);
+			}
+		}
 	}
 }
