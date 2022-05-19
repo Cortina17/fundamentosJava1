@@ -9,6 +9,7 @@ public class TestArray {
 		TestArray.ejemplo3();
 		TestArray.ejemplo4();
 		TestArray.ejemplo5();
+		TestArray.ejemplo6();
 
 		char[] letras = ejemplo5();
 		for (int i = 0; i < letras.length; i++) {
@@ -73,5 +74,17 @@ public class TestArray {
 			s[i] = (char) ('A' + i);
 		}
 		return s;
+	}
+
+	static void ejemplo6() {
+		// Matriz de dos filas y tres columnas
+		String[][] ciudades = { { "BsAs", "Sao Paulo", "Madrid" }, { "Argentina", "Brasil", "España" } };
+		for (int i = 0; i < ciudades.length; i++) {
+			// se posiciona en las filas
+			for (int j = 0; j < ciudades[i].length; j++) {
+				// se posiciona en las columnas
+				System.out.println(ciudades[i][j]); // ciudades[fila][columna]
+			}
+		}
 	}
 }
