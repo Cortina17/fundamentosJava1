@@ -14,6 +14,7 @@ public class TestDecision {
 		test.forUseTwo();
 		test.forUseThird();
 		test.forUseFourth();
+		test.whileUse();
 	}
 
 	static int verCantidadAsistentes() {
@@ -125,8 +126,20 @@ public class TestDecision {
 	}
 
 	void forUseFourth() {
-		for (int j = 0; j < 10; j+=2) {
+		for (int j = 0; j < 10; j += 2) {
 			System.out.println("Valor del par: " + j);
 		}
+	}
+
+	void whileUse() {
+		int cont = 10;
+		while (cont++ < 10) {
+			System.out.println("Numero 1 contador: " + cont);
+		}
+
+		int cont1 = 10;
+		do {
+			System.out.println("Numero 2 contador: " + cont1);
+		} while (cont1++ < 10);
 	}
 }
