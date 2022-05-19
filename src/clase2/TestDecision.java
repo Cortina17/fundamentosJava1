@@ -9,6 +9,7 @@ public class TestDecision {
 		System.out.println(test.verCantAsistentes());
 		// llamada al metodo no estatico
 		test.switchUse();
+		test.switchUseTwo();
 	}
 
 	static int verCantidadAsistentes() {
@@ -69,7 +70,34 @@ public class TestDecision {
 		default:
 			System.out.println("Error");
 		}
-		
+
 		System.out.println("Salida del switch");
+	}
+
+	void switchUseTwo() {
+		int mes = 2;
+		switch (mes) {
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			System.out.println("Tiene 31 días");
+			break;
+		case 2:
+			System.out.println("Tiene 28 o 29 dias");
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.println("Tiene 30 dias");
+			break;
+		default:
+			System.out.println("Error");
+		}
+		System.out.println("Salida del switch 2");
 	}
 }
