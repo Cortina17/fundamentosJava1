@@ -13,6 +13,7 @@ public class TestDecision {
 		test.forUse();
 		test.forUseTwo();
 		test.forUseThird();
+		test.forUseFourth();
 	}
 
 	static int verCantidadAsistentes() {
@@ -120,6 +121,12 @@ public class TestDecision {
 	void forUseThird() {
 		for (int j = 10; j >= 0; j--) {
 			System.out.println("Valor del contador para atras: " + j);
+		}
+	}
+
+	void forUseFourth() {
+		for (int j = 0; j < 10; j+=2) {
+			System.out.println("Valor del par: " + j);
 		}
 	}
 }
