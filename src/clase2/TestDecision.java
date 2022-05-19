@@ -10,6 +10,7 @@ public class TestDecision {
 		// llamada al metodo no estatico
 		test.switchUse();
 		test.switchUseTwo();
+		test.forUse();
 	}
 
 	static int verCantidadAsistentes() {
@@ -99,5 +100,11 @@ public class TestDecision {
 			System.out.println("Error");
 		}
 		System.out.println("Salida del switch 2");
+	}
+
+	void forUse() {
+		for (int i = 0; i < 10; i++) {
+			System.out.println("Valor del contador: " + i);
+		}
 	}
 }
