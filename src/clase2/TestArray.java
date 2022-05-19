@@ -7,7 +7,13 @@ public class TestArray {
 		TestArray.ejemplo1();
 		TestArray.ejemplo2();
 		TestArray.ejemplo3();
+		TestArray.ejemplo4();
+		TestArray.ejemplo5();
 
+		char[] letras = ejemplo5();
+		for (int i = 0; i < letras.length; i++) {
+			System.out.println(letras[i]);
+		}
 	}
 
 	static void ejemplo1() {
@@ -32,7 +38,7 @@ public class TestArray {
 
 	static void ejemplo3() {
 		int[] nros = { 1, 2, 3 };
-		int[] valores = null;
+		int[] valores = new int[3];
 		valores[0] = 4;
 		valores[1] = 5;
 		valores[2] = 6;
@@ -40,5 +46,32 @@ public class TestArray {
 		for (int i = 0; i < misNros.length; i++) {
 			System.out.println(misNros[i]);
 		}
+	}
+
+	static void ejemplo4() {
+		int[] ages = new int[3];
+		ages[0] = 19;
+		ages[1] = 21;
+		ages[2] = 24;
+
+		String[] names = new String[3];
+		names[0] = "May";
+		names[1] = "Bob";
+		names[2] = "Leo";
+
+		int[] nros = new int[5];
+		for (int i = 0; i < nros.length; i++) {
+			nros[i] = (int) (Math.random() * 100);
+			System.out.println(nros[i]);
+		}
+	}
+
+	static char[] ejemplo5() {
+		char[] s;
+		s = new char[26];
+		for (int i = 0; i < 26; i++) {
+			s[i] = (char) ('A' + i);
+		}
+		return s;
 	}
 }
