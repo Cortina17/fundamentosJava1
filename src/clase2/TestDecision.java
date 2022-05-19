@@ -8,6 +8,7 @@ public class TestDecision {
 		TestDecision test = new TestDecision();
 		System.out.println(test.verCantAsistentes());
 		// llamada al metodo no estatico
+		test.switchUse();
 	}
 
 	static int verCantidadAsistentes() {
