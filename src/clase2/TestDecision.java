@@ -20,6 +20,11 @@ public class TestDecision {
 		}
 
 		largeVenue = (attendees >= 5);
+		String a = "";
+		// Ternary operator
+		a = attendees >= 5 ? "SI" : "NO";
+		System.out.println(a);
+		System.out.println(attendees >= 5 ? "SI" : "NO");
 		return attendees;
 	}
 
